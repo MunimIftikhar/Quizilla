@@ -13,7 +13,30 @@
     padding:0;
 
 }
+.QuizRow
+{
 
+    height: 800px;
+    background-image: url("bg7.jpg");
+    background-size: 100% 100%;
+
+}
+.QuizDiv
+{
+
+    alignment: center;
+    max-width: 800px;
+    padding: 10px 30px 10px 37px;
+    background-color: black;
+    font-family:Tahoma;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    margin-left: 200px;
+
+
+
+}
 a:hover
 {
     background-position: right;
@@ -149,7 +172,7 @@ a:hover
 .srch-bar{
     /* background-color: blue;*/
     padding-top: 22px;
-    padding-left: 350px;
+    padding-left: 10px;
 
 }
 .SRB{

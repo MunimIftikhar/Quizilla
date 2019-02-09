@@ -1,8 +1,8 @@
 <?php
 require_once("header_C.php")
 ?>
-<div class="row slider">
-    <div id="wrapper">
+<div class="row slider" style="background-color: black">
+    <div id="wrapper" style="background-color: black">
         <div id="main-content">
             <div class="container-fluid con" style="padding-left: 0px; padding-bottom: 0px; width: 100%; padding-right: 0px" >
                 <div id="myCarousel" class="carousel slide" data-ride="carousel" style="border-bottom: 10px solid white">
@@ -17,21 +17,21 @@ require_once("header_C.php")
                         <div class="item active">
                             <div class="col-12 d-inline" style="padding-left: 0px; padding-right: 0px">
 
-                                <a herf="quiz.php?courseId=1"><img src="images/itcs.jpg" width="100%" height="355px" alt="Course class="img-responsive"></a>
+                                <a href="quiz.php?courseId=1"><img src="images/itcs.jpg" width="100%" height="100%" alt="Course class="img-responsive"></a>
 
                             </div>
                         </div>
                         <div class="item">
                             <div class="col-12 d-inline" style="padding-left: 0px; padding-right: 0px">
                                 <center>
-                                    <a herf="quiz.php?courseId=2"><img src="images/lts.jpg" width="100%" height="380px"alt="Course" class="img-responsive"></a>
+                                    <a href="quiz.php?courseId=2"><img src="images/lts.jpg" width="100%" height="100%"alt="Course" class="img-responsive"></a>
                                 </center>
                             </div>
                         </div>
                         <div class="item">
                             <div class="col-12 d-inline" style="padding-left: 0px; padding-right: 0px">
                                 <center>
-                                    <a herf="quiz.php?courseId=3"><img src="images/ooads.jpg" width="100%" height="380px"alt="Course" class="img-responsive"></a>
+                                    <a href="quiz.php?courseId=3"><img src="images/ooads.jpg" width="100%" height="100%"alt="Course" class="img-responsive"></a>
                                 </center>
                             </div>
                         </div>
@@ -51,31 +51,29 @@ require_once("header_C.php")
 
     </div >
 </div>
-
-<div class="row subjects">
+<div class="row subjects" style="background-color: black">
     <div class="class col-4 itc">
 
-        <a herf="quiz.php?courseId=1"><img src="images/itc.jpg" width="300px" height="300px"><br><h1 style="color: white">Intoduction To Computing</h1></a>
-        <p>
-
-        </p>
+        <a href="quiz.php?courseId=1">
+            <img src="images/itc.jpg" alt="ITC" style="width:300px;height:300px;border:0;">
+        <br>
+        <h1 style="color: white">Intoduction To Computing</h1></a>
 
     </div>
     <div class="class col-4 lt">
 
-        <a herf="quiz.php?courseId=2"><img src="images/lt.jpg" width="300px" height="300px"><br><h1 style="color: white">Logical Thinking</h1></a>
-        <p>
-
-        </p>
+        <a href="quiz.php?courseId=2">
+            <img src="images/lt.jpg" alt="ITC" style="width:300px;height:300px;border:0;">
+        <br>
+        <h1 style="color: white">Logical Thinking</h1></a>
 
     </div>
     <div class="class col-4 ooad">
 
-        <a herf="quiz.php?courseId=3"><img src="images/ooad.jpg" width="300px" height="300px"><br><h1 style="color: white">Object Oriented Programming</h1></a>
-        <p>
-
-        </p>
-
+        <a href="quiz.php?courseId=3">
+            <img src="images/ooad.jpg" alt="ITC" style="width:300px;height:300px;border:0;">
+        <br>
+        <h1 style="color: white">Object Oriented Programming</h1></a>
     </div>
 </div>
 
