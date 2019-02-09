@@ -35,7 +35,7 @@
                 <input class="LIB" name="btn" type="button" value="Log in" onclick="window.open('login.php')"/>
             </div>
             <div class="col-2 create-acc">
-                <input class="CAB" name="btn" type="button" value="Create Account" onclick="window.open('signup.php')"/>
+                <input class="CAB" name="btn" type="button" value="SighnUp" onclick="window.open('signup.php')"/>
 
             </div>
 

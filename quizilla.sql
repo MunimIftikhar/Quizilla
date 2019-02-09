@@ -5,20 +5,18 @@ CREATE TABLE IF NOT EXISTS users (
                                      userId int(100) NOT NULL,
                                      userName varchar(55) NOT NULL,
                                      password varchar(55) NOT NULL,
-                                     firstName varchar(255) NOT NULL,
-                                     lastName varchar(255) NOT NULL,
                                      email varchar(255) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
 
 ALTER TABLE users ADD PRIMARY KEY (userId);
 ALTER TABLE users ADD UNIQUE KEY (email);
 
 ALTER TABLE users MODIFY userId int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=0;
 
-CREATE TABLE IF NOT EXISTS courses{
+CREATE TABLE IF NOT EXISTS courses(
                                     courseId int(10) NOT NULL,
                                      courseName varchar(55) NOT NULL
-}
+);
 ALTER TABLE courses ADD PRIMARY KEY (courseId);
 ALTER TABLE courses ADD UNIQUE KEY (courseName);
 
@@ -29,7 +27,7 @@ INSERT INTO courses (courseId,courseName) VALUES
 (2,'OOP'),
 (3,'ITC');
 
-CREATE TABLE IF NOT EXISTS questions{
+CREATE TABLE IF NOT EXISTS questions(
                                      quesId int(10) NOT NULL,
                                      question varchar(250) NOT NULL,
                                      opt1 varchar(55) NOT NULL,
@@ -39,7 +37,7 @@ CREATE TABLE IF NOT EXISTS questions{
                                      correctAns varchar(55) NOT NULL,
                                      explaination varchar(250),
                                      courseId int(10) NOT NULL
-}
+);
 ALTER TABLE questions ADD PRIMARY KEY (quesId);
 ALTER TABLE questions ADD UNIQUE KEY (question);
 ALTER TABLE questions ADD FOREIGN KEY (courseId) REFERENCES courses(courseId);
@@ -60,6 +58,6 @@ Given expression = 30 / 2 + 3 x 6 - 5 = 15 + 18 - 5',1),
 (10,'Can constructors be overloaded in derived class?','Yes, always','Yes, if derived class has no constructor','No, programmer can’t do it','No, never','No, never','The constructor must be having the same name as that of a class. Hence a constructor of one class can’t even be defined in another class. Since the constructors can’t be defined in derived class, it can’t be overloaded too, in derived class.',2),
 (11,'If you needed to execute some code repeatedly based on a certain condition, which of the following would you use?','Loop','Variable','Conditional','Compiler','Loop',NULL,3),
 (12,'What is the difference between a variable and a constant?','The value of a constant doesn''t change, the value of a variable can change all throughout a program','Variables can be declared only in software languages',' No difference','Constants can be declared only in Java','The value of a constant doesn''t change, the value of a variable can change all throughout a program',NULL,3),
-(13,' In C-style languages, an asterisk (*) after a variable denotes a:   ','Float','Function','Pointer','Reference','Pointer','Declaring a variable with an asterisk after it in C sets it as a pointer',3);
+(13,' In C-style languages, an asterisk (*) after a variable denotes a:   ','Float','Function','Pointer','Reference','Pointer','Declaring a variable with an asterisk after it in C sets it as a pointer',3),
 (14,'How many bytes does a char use?','1','2','4','8','1',NULL,3),
 (15,'Ask user for a number, ask user for another number, multiply the two numbers, print result..What do you call this set of instructions?','An algorithm','A compiler','A class','PHP','An algorithm','An algorithm is a set of steps for carrying out a specific task. Algorithms are used extensively in computer programming to arrive at a solution for a problem. A real world example of an algorithm would be a recipe. The instructions of a typical recipe (add ingredients, mix, stir, etc.) are an algorithm.',3);
