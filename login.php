@@ -27,9 +27,9 @@ require_once("header.php")
 ?>
 
     <div class="row LI">
-    <div class="col-12 sig">
+    <div class="col-12 sig ">
         <div id="main">
-        <div class="article">
+        <div class="article login">
 
             <form method="post" action="login.php">
                 <label style="color: white"><?php echo $error_msg; ?></label>

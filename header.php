@@ -10,10 +10,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 
-<header>
+<div id="header">
+<header class="header">
 
+    <nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top websiteheader " style="background:currentColor " >
 
     <div class="whole" style='width: 0px auto; margin:0px auto'>
         <div class="row bar" >
@@ -35,11 +41,13 @@
                 <input class="LIB" name="btn" type="button" value="Log in" onclick="window.open('login.php')"/>
             </div>
             <div class="col-2 create-acc">
-                <input class="CAB" name="btn" type="button" value="SighnUp" onclick="window.open('signup.php')"/>
+                <input class="CAB" name="btn" type="button" value="Create Account" onclick="window.open('signup.php')"/>
 
             </div>
 
         </div>
     </div>
+    </nav>
 </header>
+</div>
 </html>

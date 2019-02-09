@@ -35,7 +35,7 @@ if (isset($_POST['sign_up'])) {
 
     <div class="col-12 sig">
         <div id="main">
-            <div class="article">
+            <div class="article signin">
 
                 <form method="post" enctype="multipart/form-data" >
                     <label style="color: white"><?php echo $error_msg; ?></label>
