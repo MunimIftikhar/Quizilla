@@ -49,28 +49,41 @@ a:hover
     background: grey;
 }
 
+/*.group
+{
+    padding-left: 380px;
+    padding-top: 10px;
+    padding-right: 20px;
+
+
+
+
+}
+
 #footer
 {
     bottom:0;
     width:100%;
     height:190px;
     position:absolute;
+
 }
 #wrapper
 {
     min-width: 100%;
     min-height: 100%;
     position: absolute;
-}
-.footer{
-    clear:both;
-    width:100%;
-    min-height:300px;
-    background-image: url("bg3.jpg");
-    background-size: 100% 100%;
+}*/
+.main_footer{
 
+    height:50px;
+
+
+    /*background-color:#181818;*/
+
+    background-color: black;
 }
-.footer .widget-footer{
+/*.footer .widget-footer{
     width: 100%;
     min-height:240px;
 
@@ -78,10 +91,12 @@ a:hover
 }
 .footer .widgets
 {
-    width:20%;
+
     min-height:220px;
-    padding:3.5%;
+
+    padding-left: 50px;
     float:left;
+
 }
 .footer .widgets h4
 {
@@ -99,15 +114,14 @@ a:hover
 {
 
     margin: 15px;
-}
-.footer .main-footer
+}*!*/
+/*.footer .main-footer
 {
-    clear:both;
-    width:100%;
-    height:60px;
-    background-image:url("bg3.jpg");;
-}
-.footer .main-footer p{
+
+    !*background-image:url("bg3.jpg");*!
+    background-color: black;
+}*/
+/*.footer .main-footer p{
     color:#fff;
     text-align:center;
     padding-top: 22px;
@@ -118,7 +132,7 @@ a:hover
     {
         font-size: 13px;
     }
-}
+}*/
 
 
 .bar{
@@ -133,7 +147,7 @@ a:hover
     /*background-color: blue;*/
 }
 .srch-bar{
-   /* background-color: blue;*/
+    /* background-color: blue;*/
     padding-top: 22px;
     padding-left: 350px;
 
@@ -166,7 +180,7 @@ a:hover
 
     padding-top: 22px;
     padding-left: 40px;
-    //background-color: yellow;
+//background-color: yellow;
 }
 .LIB
 {
@@ -205,7 +219,7 @@ a:hover
 }
 .welcome
 {
- /*   background-color: yellow;*/
+    /*   background-color: yellow;*/
     padding-top: 120px;
     height:500px;
     text-align: center;
@@ -218,7 +232,7 @@ a:hover
 
 .description{
     height:400px;
-   background-color: black;
+    background-color: black;
     /*background-image:url("bg3.jpg");*/
 
 }
@@ -251,13 +265,13 @@ p{
     padding-top: 100px;
     padding-left: 30px;
 
-   /* background-color:yellow ;*/
+    /* background-color:yellow ;*/
 }
 
 .pic2{
     padding-top: 100px;
     padding-left: 100px;
-   /* background-color:red ;*/
+    /* background-color:red ;*/
 }
 
 .pic3{
@@ -281,30 +295,7 @@ p{
 
 }
 
-/*.sig{
 
-    padding-top: 100px;
-
-
-}*/
-
-/*input[type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 2px solid darkslategrey;
-}
-
-input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 10px;
-    border: 2px solid darkslategrey;
-}*/
 .SU{
     background-image: url("bg7.jpg");
     background-size: 100% 100%;
@@ -361,8 +352,8 @@ input[type=password] {
 }
 .aboutus{
 
-   /* background-image: url("bg7.jpg");
-    background-size: 100% 100%;*/
+    /* background-image: url("bg7.jpg");
+     background-size: 100% 100%;*/
     height: 1000px;
 
 }
@@ -385,6 +376,95 @@ input[type=password] {
     height: 1800px;
 
 
+}
+
+.itc{
+    /*margin: auto;*/
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.lt{
+
+    /*margin:auto;*/
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.ooad{
+
+    /*margin: auto;*/
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+
+#wrapper
+{
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+}
+
+
+#main-content
+{
+    width: 100%;
+    padding-bottom: 300px;
+}
+.img-responsive
+{
+    width: 100%;
+}
+
+.subjects{
+
+    height: 700px;
+    background-color: black;
+
+}
+.slider{
+
+    height: 400px;
+    background-color: black;
+}
+.footer{
+    height:300px;
+    background-color:#181818;
+}
+.search{
+
+    color:#999999;
+    padding-top:40px;
+    padding-left:60px;
+}
+.search input[type=text] {
+    background-color:#181818;
+    color:white;
+}
+.search input[type=text], .search  button {
+    background-color:#181818;
+}
+.connect{
+    color:#999999;
+    padding-top:40px;
+}
+.link{
+    color:#999999;
+    padding-top:40px;
+}
+.contact{
+
+    color:#999999;
+    padding-top:40px;
+}
+.btn{
+    width:100%;
+    color:white;
+    background-color:#181818;
+}
+.OUTPUT{
+    height:500px;
 }
 
 @media screen and (max-width: 768px)

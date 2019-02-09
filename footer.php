@@ -1,44 +1,65 @@
-
-<footer class="row foot">
-    <div class="footer">
-        <div class="widget-footer">
-            <div class="wrap-container">
-                <div class="widgets">
-                    <font color="white">
-                        <h2>Contact information</h2>
-                        <p> Contact us on the following </p>
-                        <p><strong>Phone No:</strong>051-2270744</p>
-                        <p><strong>Email Address: </strong>khadija.zahid@ucp.edu.pk</p>
-                    </font>
-                </div>
-
-                <div class="widgets">
-                    <font color="white"><h2>Follow us on social media</h2></font>
-                    <li><a href="https://www.facebook.com/Quizilla-344763426376280/?modal=admin_todo_tour"><span class="fa fa-instagram-f" style="font-size:24px;color:red"></span></span>Facebook</a></li>
-
-                    <li> <a href="https://www.instagram.com/quizilla.pk/"><span class="fa fa-instagram-f" style="font-size:24px;color:red"></span>Instagram</a></li>
-                </div>
-                <div class="row">
-
-                    <div class="col-6 group">
-                        <font color="white">
-                            <h1>GROUP MEMBERS</h1>
-                            <h5>MUNIM IFTIKHAR</h5>
-                            <h5>RASHAM AYAZ</h5>
-                            <h5>AYESHA ARIF</h5>
-                            <h5>AIMEN RUBAB</h5>
-                            <h5>KHADIJA ZAHID</h5>
-                        </font>
-
-                    </div>
-
-
-                </div>
-
-            </div>
+<footer>
+    <div class='row footer'>
+        <div class='col-1 space'>
         </div>
-        <div class="main-footer">
-            <p> QUIZILLA copyright &copy; 2018</p>
+        <div class='col-3 search'>
+            <b style='color:white; font-size: 23px''>  About Us  </b>
+            <br> <br>
+            <span style="font-size:20px "> BSCS 5th Semester Student </span> </p>
+            <br>
+
         </div>
+        <div class='col-2 connect'>
+            <b style='color:white; font-size: 23px'>  Connect with Us  </b>
+            <br> <br>
+            <a href=  "https://www.facebook.com/Quizilla-344763426376280/">
+                <img src = "images/f.jpg" width="50" height="50"></i></a>
+        </div>
+        <div class='col-2 link'>
+            <b style='color:white; font-size: 23px' >  Additional Links  </b>
+            <br> <br>
+            <span style="font-size:20px ">Project
+        <br>
+        Pages
+
+        <br>
+        <a href="aboutus.php" style=" color:#999999;">About</a>
+        <br>
+            <a href="aboutus.php" style=" color:#999999;">Contact </a> </span>
+        </div>
+        <div class='col-2 contact'>
+            <b style='color:white; font-size: 23px''>  Contact Us  </b>
+            <br> <br>
+            <span style="font-size:20px ">  UCP Johar Town Lahore
+        <br>
+      quizilla@gmail.com
+        <br>
+        Call us on:
+        <br>
+       090078601
+        <br>
+      12345677 </span>
+
+
+        </div>
+
+
+
+        <div class='col-2 space'>
+        </div>
+
+
+
     </div>
+
+
+
+    <div class="main_footer">
+        <center>
+            <p> QUIZILLA copyright &copy; 2018</p>
+        </center>
+
+
+    </div>
+
 </footer>

@@ -13,10 +13,12 @@ if(isset($_POST['log_in']))
     if ($check_user == 0) {
         $error_msg = 'Password or Email is wrong, try again';
     } else {
+        $row = mysqli_fetch_array($result);
         $_SESSION['email']=$email;
+        $_SESSION['userName']=$row['userName'];
         setcookie('email', $email, time() + (10 * 365 * 24 * 60 * 60));
         setcookie('password', $password, time() + (10 * 365 * 24 * 60 * 60));
-        header('location:loggedIn.php');
+        header('location:courses.php');
     }
 
 }
@@ -31,7 +33,7 @@ require_once("header.php")
         <div id="main">
         <div class="article login">
 
-            <form method="post" action="login.php">
+            <form method="post" action="">
                 <label style="color: white"><?php echo $error_msg; ?></label>
             <br>
             <h1 style="color: white" align="center" class="mt-3" >Login On  <img class="logo" src="images/logo.png"  width="200px" height="110px"> </h1><br>

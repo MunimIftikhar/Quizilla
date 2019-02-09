@@ -7,7 +7,7 @@
 
 <meta name="keywords" content="html,css,javascript,xml">
 
-<meta name="discription" content="Pakflix films">
+<meta name="discription" content="Quizilla">
 
 <meta name="author" content="">
 
