@@ -1,5 +1,10 @@
 <?php
-require_once("header.php")
+require_once("header.php");
+require_once("admin/db.php");
+
+$query='SELECT * FROM courses';
+$result=mysqli_query($conn, $query);
+
 ?>
 <div class="row slider" style="background-color: black">
     <div id="wrapper" style="background-color: black">
@@ -17,21 +22,21 @@ require_once("header.php")
                         <div class="item active">
                             <div class="col-12 d-inline" style="padding-left: 0px; padding-right: 0px">
 
-                                <a href="quiz.php?courseId=1"><img src="images/itcs.jpg" width="100%" height="100%" alt="Course" class="img-responsive"></a>
+                                <a href="quiz.php?courseId=3"><img src="images/itcs.jpg" width="100%" height="100%" alt="Course" class="img-responsive"></a>
                                     
                             </div>
                         </div>
                         <div class="item">
                             <div class="col-12 d-inline" style="padding-left: 0px; padding-right: 0px">
                                 <center>
-                                    <a href="quiz.php?courseId=2"><img src="images/lts.jpg" width="100%" height="100%"alt="Course" class="img-responsive"></a>
+                                    <a href="quiz.php?courseId=1"><img src="images/lts.jpg" width="100%" height="100%"alt="Course" class="img-responsive"></a>
                                 </center>
                             </div>
                         </div>
                         <div class="item">
                             <div class="col-12 d-inline" style="padding-left: 0px; padding-right: 0px">
                                 <center>
-                                    <a href="quiz.php?courseId=3"><img src="images/ooads.jpg" width="100%" height="100%"alt="Course" class="img-responsive"></a>
+                                    <a href="quiz.php?courseId=2"><img src="images/ooads.jpg" width="100%" height="100%"alt="Course" class="img-responsive"></a>
                                 </center>
                             </div>
                         </div>
@@ -52,37 +57,19 @@ require_once("header.php")
     </div >
 </div>
 <div class="row subjects" style="background-color: black">
-    <div class="class col-4 itc">
-
-        <a href="quiz.php?courseId=1">
-            <img src="images/itc.jpg" alt="ITC" style="width:300px;height:300px;border:0;">
-        <br>
-        <h1 style="color: white">Intoduction To Computing</h1></a>
-             
-            <p>Get confident in your ability to <br>
-            think and problem-solve like a programmer, by reviewing the basics of programming .<br>
-            </p>
-    </div>
-    <div class="class col-4 lt">
-
-        <a href="quiz.php?courseId=2">
-            <img src="images/lt.jpg" alt="ITC" style="width:300px;height:300px;border:0;">
-        <br>
-        <h1 style="color: white">Logical Thinking</h1></a>
-		<p>Logical thinking is the process of clearly moving from one related thought to another. <br>Put your logical thinking to the test with these questions.<br>
-            </p>
-
-    </div>
-    <div class="class col-4 ooad">
-
-        <a href="quiz.php?courseId=3">
-            <img src="images/ooad.jpg" alt="ITC" style="width:300px;height:300px;border:0;">
-        <br>
-        <h1 style="color: white">Object Oriented Programming</h1></a>
-		   <p>Get to know how strong you are in OOP, by solving these questions that have 
-		   basic concepts and is independent of any programming language.<br>
-            </p>
-    </div>
+    <?php
+    while($row=mysqli_fetch_array($result))
+    {
+    ?>
+        <div class="class col-4 itc">
+            <a href="quiz.php?courseId=<?php echo $row['courseId']; ?>">
+                <img src="<?php echo $row['coursePhoto']; ?>" alt="?php echo $row['courseName']; ?>" style="width:300px;height:300px;border:0;">
+            <br>
+            <h1 style="color: white"><?php echo $row['courseName']; ?></h1></a>
+        </div>
+        <?php
+    }
+    ?>
 </div>
 
 <?php

@@ -1,12 +1,12 @@
 <?php
 require "header.php";
-require "admin/db.php";
+require "db.php";
 
 session_start();
 $error_msg='';
 if (isset($_POST['sign_up'])) {
 
-    $username=$_POST['userName'];
+    $username=$_POST['adminName'];
     $email = $_POST['email'];
     $pass1 = $_POST['password'];
     $pass2 = $_POST['confirmpassword'];
@@ -20,18 +20,18 @@ if (isset($_POST['sign_up'])) {
     }
     if($pass1!=$pass2)
     {
-       $check=false;
+        $check=false;
         $error_msg = 'Password or Email is wrong, try again';
     }
     if(check!=false) {
-        $query = "INSERT INTO users (userName, password, email) VALUES('$username', '$pass1','$email')";
+        $query = "INSERT INTO admin (adminName, password, email) VALUES('$username', '$pass1','$email')";
         mysqli_query($conn, $query);
-        $_SESSION['email'] = $email;
-        $_SESSION['userName'] = $username;
-        setcookie('email', $email, time() + (10 * 365 * 24 * 60 * 60));
-        setcookie('userName', $username, time() + (10 * 365 * 24 * 60 * 60));
-        setcookie('password', $pass1, time() + (10 * 365 * 24 * 60 * 60));
-        header('location: login.php');
+        $_SESSION['adminemail'] = $email;
+        $_SESSION['adminName'] = $username;
+        setcookie('adminemail', $email, time() + (10 * 365 * 24 * 60 * 60));
+        setcookie('adminName', $username, time() + (10 * 365 * 24 * 60 * 60));
+        setcookie('adminpassword', $pass1, time() + (10 * 365 * 24 * 60 * 60));
+        header('location: index.php');
     }
 }
 ?>
@@ -53,7 +53,7 @@ if (isset($_POST['sign_up'])) {
 
                     <p style="color: white"><b>User Name: </b> </p>
 
-                    <input type="text" size="25%" class="form-control" placeholder="User Name" name="userName" required pattern = "[A-Za-z](\d|\w|\.|-){2,30}" class="textInput" >
+                    <input type="text" size="25%" class="form-control" placeholder="User Name" name="adminName" required pattern = "[A-Za-z](\d|\w|\.|-){2,30}" class="textInput" >
 
                     <br><br>
 
@@ -78,11 +78,8 @@ if (isset($_POST['sign_up'])) {
 
             </div>
         </div>
-        
+
     </div>
 </div>
 </body>
-<?php
-require_once("footer.php")
-?>
 

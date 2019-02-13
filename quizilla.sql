@@ -13,19 +13,32 @@ ALTER TABLE users ADD UNIQUE KEY (email);
 
 ALTER TABLE users MODIFY userId int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=0;
 
+CREATE TABLE IF NOT EXISTS admin (
+                                     adminId int(100) NOT NULL,
+                                     adminName varchar(55) NOT NULL,
+                                     password varchar(55) NOT NULL,
+                                     email varchar(255) NOT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=100 DEFAULT CHARSET=latin1;
+
+ALTER TABLE admin ADD PRIMARY KEY (adminId);
+ALTER TABLE admin ADD UNIQUE KEY (email);
+
+ALTER TABLE admin MODIFY adminId int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=0;
+
 CREATE TABLE IF NOT EXISTS courses(
                                     courseId int(10) NOT NULL,
-                                     courseName varchar(55) NOT NULL
+                                     courseName varchar(250) NOT NULL,
+                                     coursePhoto varchar(100) NOT NULL
 );
 ALTER TABLE courses ADD PRIMARY KEY (courseId);
 ALTER TABLE courses ADD UNIQUE KEY (courseName);
 
 ALTER TABLE courses MODIFY courseId int(8) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=0;
 
-INSERT INTO courses (courseId,courseName) VALUES
-(1,'LT'),
-(2,'OOP'),
-(3,'ITC');
+INSERT INTO courses (courseId,courseName,coursePhoto) VALUES
+(1,'Logical Thinking','admin/images/lt.jpg'),
+(2,'Object Oriented Programming','admin/images/ooad.jpg'),
+(3,'Introduction To Computing','admin/images/itc.jpg');
 
 CREATE TABLE IF NOT EXISTS questions(
                                      quesId int(10) NOT NULL,

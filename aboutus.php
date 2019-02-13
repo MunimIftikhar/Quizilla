@@ -77,7 +77,7 @@ require_once("header.php")
 
                     <img src="images/1.jpeg" width="300" height="300" alt="Munim">
 
-                    <h4>Munim <a href=  " https://github.com/MunimIftikhar"> <i class="fab fa-github"></i></a>
+                    <h4 style="color: white ">Munim <a href=  " https://github.com/MunimIftikhar"> <i class="fab fa-github"></i></a>
 
                         <a href=  "https://www.facebook.com/munim.iftikhar90"><i class="fab fa-facebook-f"></i></a>      </h4>
 
@@ -89,7 +89,7 @@ require_once("header.php")
 
                     <img src="images/2.jpeg" width="300" height="300" alt="Rasham">
 
-                    <h4>Rasham <a href=  "https://github.com/RashamAyaz"> <i class="fab fa-github"></i></a>
+                    <h4 style="color: white ">Rasham <a href=  "https://github.com/RashamAyaz"> <i class="fab fa-github"></i></a>
 
                         <a href=  "https://www.facebook.com/rashamayaz26"><i class="fab fa-facebook-f"></i></a></h4>
 
@@ -99,7 +99,7 @@ require_once("header.php")
 
                     <img src="images/3.jpeg" width="300" height="300" alt="Aimen">
 
-                    <h4>Aimen   <a href=  "https://github.com/aimenrubab"> <i class="fab fa-github"></i></a>
+                    <h4 style="color: white ">Aimen   <a href=  "https://github.com/aimenrubab"> <i class="fab fa-github"></i></a>
 
                         <a href=  "https://www.facebook.com/aimen.leo27"><i class="fab fa-facebook-f"></i></a></h4>
 
@@ -109,7 +109,7 @@ require_once("header.php")
 
                     <img src="images/4.jpeg" width="300" height="300"alt="Khadija">
 
-                    <h4>Khadija <a href=  "https://github.com/l1f16bscs0383"> <i class="fab fa-github"></i></a>
+                    <h4 style="color: white ">Khadija <a href=  "https://github.com/l1f16bscs0383"> <i class="fab fa-github"></i></a>
 
                         <a href=  "https://m.facebook.com/deejay423"><i class="fab fa-facebook-f"></i></a></h4>
 
@@ -119,7 +119,7 @@ require_once("header.php")
 
                     <img src="images/5.jpeg" width="300" height="300" alt="Ayesha">
 
-                    <h4>Ayesha <a href=  "https://github.com/Ayesha-Arif"> <i class="fab fa-github"></i></a>
+                    <h4 style="color: white ">Ayesha <a href=  "https://github.com/Ayesha-Arif"> <i class="fab fa-github"></i></a>
 
                         <a href=  "https://www.facebook.com/ashuulushianah008"><i class="fab fa-facebook-f"></i></a>
 

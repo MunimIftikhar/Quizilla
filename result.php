@@ -1,30 +1,18 @@
 <?php
 require_once("header.php");
-require "db.php";
+require "admin/db.php";
 $courseId=$_GET['courseId'];
+$courses="select * from courses where courseId='$courseId'";
+$course_result = mysqli_query($conn, $courses);
+$course_rows = mysqli_fetch_array($course_result);
 $ansid=1;
 ?>
-
-    <div class="row QuizRow">
-        <div class="col-12 center QuizDiv text-center">
+<br><br><br><br>
+    <div class="row QuizRow center">
+        <div class="col-12 center QuizDivR text-center">
                 <br><br>
-                <?php
-            if($courseId==1)
-            {
-                ?><h1 class="text-center text-white font-weight-bold text-uppercase" >Introduction to Computing </h1><br>
-            <?php
-            }
-            if($courseId==2)
-            {
-                ?><h1 class="text-center text-white font-weight-bold text-uppercase bg-dark" >Logical Thinking </h1><br>
-                <?php
-            }
-            if($courseId==3)
-            {
-                ?><h1 class="text-center text-white font-weight-bold text-uppercase bg-dark" >Object oriented programming </h1><br>
-                <?php
-            }?>
-                <br><br>
+            <h1 class="text-center text-white font-weight-bold text-uppercase" ><?php echo $course_rows['courseName']; ?></h1><br>
+            <br><br>
                 <h1 class="text-white"> Results </h1>
 
             <h2>Questions Attempted</h2>
