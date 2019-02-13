@@ -203,7 +203,7 @@ main() {
 		char ch;
 	} var;
 
-   var.ch = 'A';
+   var.ch = ''A'';
    cout<<var.x;
 }','A','Garbage Value','65','97','Garbage Value','65, as the union variables share common memory for all its elements, x gets ‘A’ whose ASCII value is 65 and is printed.
 
@@ -216,7 +216,7 @@ main() {
 		char ch;
 	} var;
 
-   var.ch = 'A';
+   var.ch = ''A'';
    cout<<var.x;
 }
 

@@ -35,7 +35,7 @@ $ansid=1;
                 // print_r($rows);
                 ?><h6>(<?php echo $i; ?>)</h6><br>
                 <h4>Correct Answer:</h4><h6><?php echo $rows['correctAns']; ?></h6><br>
-                <h4>Explaination:</h4><h6><?php echo $rows['explaination']; ?></h6><br><?php
+                <h4>Explanation:</h4><h6><?php echo $rows['explaination']; ?></h6><br><?php
                 $i++;
             }
             ?>

@@ -65,7 +65,11 @@ session_start();
     </div>
     <div class="col-3 pic2">
         <img src ="images/p3.jpg" height="250px" width="300px">
+         <p> <br>
+            Clear up any concepts that you may be confused about
+              through our helpful explanation to every question!&nbsp
 
+        </p>
 
     </div>
 

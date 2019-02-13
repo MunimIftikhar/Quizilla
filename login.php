@@ -36,7 +36,7 @@ require_once("header.php")
             <form method="post" action="">
                 <label style="color: white"><?php echo $error_msg; ?></label>
             <br>
-            <h1 style="color: white" align="center" class="mt-3" >Login On  <img class="logo" src="images/logo.png"  width="200px" height="110px"> </h1><br>
+            <h1 style="color: white" align="center" class="mt-3" >Log On to <img class="logo" src="images/logo.png"  width="200px" height="110px"> </h1><br>
 
             <p style="color: white"><b>Username: </b> </p>
 

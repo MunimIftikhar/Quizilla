@@ -5,7 +5,7 @@
         <div class='col-3 search'>
             <b style='color:white; font-size: 23px''>  About Us  </b>
             <br> <br>
-            <span style="font-size:20px "> BSCS 5th Semester Student </span> </p>
+            <span style="font-size:20px "> BSCS 5th Semester Students </span> </p>
             <br>
 
         </div>
@@ -14,6 +14,8 @@
             <br> <br>
             <a href=  "https://www.facebook.com/Quizilla-344763426376280/">
                 <img src = "images/f.jpg" width="50" height="50"></i></a>
+				<a href=  "https://www.instagram.com/quizilla.pk/">
+                <img src = "images/i.png" width="50" height="50"></i></a>
         </div>
         <div class='col-2 link'>
             <b style='color:white; font-size: 23px' >  Additional Links  </b>
@@ -40,10 +42,7 @@
         <br>
       12345677 </span>
 
-
         </div>
-
-
 
         <div class='col-2 space'>
         </div>

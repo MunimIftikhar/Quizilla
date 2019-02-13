@@ -42,24 +42,25 @@ require_once("header.php")
             <div class="col-sm-7 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
                 <img src="images/7.jpeg" class="img-responsive " style="padding-top: 100px">
                 <h2 style="color: black "><b> Who We Are? </b></h2>
-                <p style="color: white ">We are Bachelors students of Computer Sciences in
-                    <br>the University of Central Punjab.
-                    And this website is <br> our project for a course, Web Application Development, <br>in our degree.   </p>
+                <p style="color: white ">We are a group of students of University of Central Punjab (UCP),
+                    <br> doing our bachelors in Computer Sciences.
+                    This website/learning tool is <br> our Semester Project for <br> Web Application Development (WAD),
+					<br> which we collaborated on to learn the true essence of Application development.   </p>
                 <h2 style="color: black"><b> Why We Are Doing This? </b></h2>
-                <p style="color: white ">We wanted to create a website that will help users choose movies  from the vast collection of
-                    Pakistani movies provided and choose which  are worth their time and money through reading descriptions
-                    and ratings provided . Additionally  our website will enable users to book tickets for the movie they want to watch
-                    (that is in cinemas). </p>
+                <p style="color: white ">Our main efforts behind the creation of this website was that we could provide students 
+				a site where they could test their knowledge ,particularly in testing the fundamentals of Computer Sciences
+				and learn  where they stand concept wise in any particular subject. </p>
             </div>
             <div class="col-sm-5 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
                 <div class="skill">
                     <img src="images/6.jpeg" class="img-responsive" style="padding-top: 100px">
                     <h2 style="color: black "> <b>What makes us different?</b></h2>
 
-                    <p style="color: white ">While all the other websites that deal with this specific category<br>
-                        do not have the services for booking movie tickets ,but this one<br>
-                        does and while other websites deal with movies all around the<br>
-                        world, ours is exclusively for Pakistani movies only. </p>
+                    <p style="color: white ">While most other websites focus on more than one field of studies,<br>
+                        our website has as exclusive audience for students of Computer Sciences only.<br>
+                        As there is much growth to be made and expereience to be gained,<br>
+                        therefore, our website is in the early stages of it's development,
+						which is why we have only a limited library for quizzes at the moment ,that (with time) we will grow. </p>
                 </div>
             </div>
         </div>

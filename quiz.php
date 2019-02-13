@@ -1,5 +1,5 @@
 <?php
-require_once("header_C.php");
+require_once("header.php");
 require "db.php";
 $courseId=$_GET['courseId'];
 $Questions = "select * from questions where courseId='$courseId'";
