@@ -63,14 +63,11 @@ session_start();
         </p>
 
     </div>
-    <div class="col-3 pic2">
+    <div class="col-4 pic2">
         <img src ="images/p3.jpg" height="250px" width="300px">
          <p> <br>
-            Clear up any concepts that you may be confused about
-              through our helpful explanation to every question!&nbsp
-
+            Clear up any concepts that you may be confused about through our helpful explanation!
         </p>
-
     </div>
 
     <div class="col-4 pic3">

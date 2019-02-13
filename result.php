@@ -1,5 +1,5 @@
 <?php
-require_once("header_C.php");
+require_once("header.php");
 require "db.php";
 $courseId=$_GET['courseId'];
 $ansid=1;

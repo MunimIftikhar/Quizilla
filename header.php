@@ -19,34 +19,45 @@
 <div id="header">
 <header class="header">
 
-    <nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top websiteheader " style="background:currentColor " >
-
-    <div class="whole" style='width: 0px auto; margin:0px auto'>
-        <div class="row bar" >
-            <div class="col-4 logo">
-
-                &nbsp &nbsp &nbsp <img src ="images/logo.png"  width="250px" height="110px">
+    <nav class="navbar navbar-expand-md navbar-dark navbar-fixed-top websiteheader " style="background:black " >
+        <div>
+                <a href="index.php">
+                    <img src="images/logo.png" alt="logo" style="width: 250px;height:110px">
+                </a>
             </div>
+        <button class="navbar-toggler navbar-right navbarbutton" type="button" data-toggle="collapse" data-target="#collapse_target"  >
+            <span class="sr-only">Togggle navigation</span>
+            <div  class="fa fa-align-justify fa-2x nav navbar-right" ></div>
+        </button>
+<div class=" collapse navbar-collapse" id="collapse_target">
+    <ul class= "nav navbar-nav navbar-right navbarcolumn"  >
 
-            <div class="col-5 srch-bar" >
+        <li ><a href="index.php"><i class="fa fa-sign-in-alt" style="color: white"></i><label style="font-size: medium; font-family: cursive;
+    font-weight: bold; color: white"> Home</label> </a></li>
+        <li> <a href="aboutus.php"><i class="fa fa-user" style="color: white"></i><label style="font-size: medium; font-family: cursive;
+    font-weight: bold; color: white"> About</label></a></li>
+        <?php
+        if(!isset($_SESSION['email']))
+        {
+            ?><li> <a href="login.php"><i class="fa fa-sign-in-alt" style="color: white"></i><label style="font-size: medium; font-family: cursive;
+    font-weight: bold; color: white">LogIn</label></a></li>
+            <li> <a href="signup.php"><i class="fa fa-sign-in-alt" style="color: white"></i><label style="font-size: medium; font-family: cursive;
+    font-weight: bold; color: white">SignUp</label></a></li>
+        <?php }
+        else
+        {
+            ?>
+        <li> <a href="courses.php"><i class="fa fa-user" style="color: white"></i><label style="font-size: medium; font-family: cursive;
+    font-weight: bold; color: white"><?php echo $_SESSION['userName']; ?></label></a></li>
+        <li> <a href="courses.php"><i class="fa fa-sign-in-alt" style="color: white"></i><label style="font-size: medium; font-family: cursive;
+    font-weight: bold; color: white">ViewCourses</label></a></li>
+        <li> <a href="logout.php"><i class="fa fa-sign-in-alt" style="color: white"></i><label style="font-size: medium; font-family: cursive;
+    font-weight: bold; color: white">LogOut</label></a></li>
+       <?php }
 
-                <input class="SRB" name="btn" type="button" value="Home" onclick="window.open('index.php')"/> &nbsp &nbsp &nbsp &nbsp
-
-                <input class="SRB_AB" name="btn" type="button" value="About Us" onclick="window.open('aboutus.php')"/>
-
-
-
-            </div>
-            <div class="col-1 log-in">
-                <input class="LIB" name="btn" type="button" value="Log in" onclick="window.open('login.php')"/>
-            </div>
-            <div class="col-2 create-acc">
-                <input class="CAB" name="btn" type="button" value="Create Account" onclick="window.open('signup.php')"/>
-
-            </div>
-
-        </div>
-    </div>
+        ?>
+    </ul>
+</div>
     </nav>
 </header>
 </div>
